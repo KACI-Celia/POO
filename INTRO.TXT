@@ -1,0 +1,47 @@
+il y a 3 moyens de creer un site web:
+
+1- From scratch (à la main, on part de rien du tout sans utiliser une librairie ou un code de base)
+
+2- CMS(Wordpress:tout est deja fait, on fait que assembler les elements, on a pas besoin de coder!!! mais on ne peut pas personnaliser si on sait pas coder,on peut personnaliser juste si on sait coder)-->pour faire un site vitrine par exemple
+
+3- Framework (sympfony,expressJs(NodeJs), angular)-->conseillé quand le site est grand
+---------------------------------------------------
+---------------------------------------------------
+
+POO= PROGRAMMATION ORIENTEE OBJET
+la semaine dernière on a fait du PROCEDURAL (semaine du 27/11 au 1/12)
+---------------------------------------------------
+---------------------------------------------------
+*** inconvénients ***
+- Techniquement, on ne peut rien faire de plus avec l'orienté objet qu'avec le procédural
+- il n'y a rien en orienté objet qu'on ne puisse pas faire en procédural et vice-versa
+
+- En géneral, l'approche orientée objet est moins intuitive que l'pproche PROCEDURAL pour l'esprit haumain.
+
+- Cependdant, bien que plus complexe, cette approche permet une meilleure évolution vers d'autres languages orientés objet tels que: C#, ASP.NET, C++, JAVA.
+
+- Légère perte de performance  (pouvant être  ameliorée par divers moyens d'optimisation)
+- La POO est généralement plus lente, car on passe par des méthodes (get, set,...) au lieu de travailler directement sur la variable ou la structutre.
+
+*** Avantages ***
+
+- Modulariser pour avoir un code évolutif.(reutiliser du code)
+- Encourage le travail collaboratif. lorsqu'une nouvelle personne personne rejoint un projet, elle n'a pas à découvrir le code progressivement.
+- Possibilite de documenter plus facilement le code.
+- Réutilisation du code. d'un projet à un autre, ne pas repartit de zéro, créer un code générique pouvant etre repris sur d'autres projets.
+- Simplifier la maintenance/ mise  à jour. tout se passe dans la classe en question.
+- Assouplir le code. Factoriser le code, meilleure conceptualisation.
+- les pages seront moins chargées.
+- Plus d'options dans le language (héritage, abstraction,surchage, finalisation, encapsulation, exception, traits, interface, ect)
+- certains aspects seraient un casse-tête en PROCEDURAL
+
+-------------------------------------------------------
+*** VOCABULAIRE ***
+
+Varaible--> Proprièté ou Attribut
+Fonction--> méthodes
+Instance-->Objet
+
+une variable permet de contenir une information, un array pemet de contenir plusieures informations, et une classe permet de regrouoper des variables avec des informations ainsi que des méthoides comportant des traitements. il s'agit de types de données différentds, et l'objet permet d'accéder aux elements contenus dans la class.
+
+On peut comparer une classe à un plan de construction d'une maison, et un objet à la maison elle-même.
