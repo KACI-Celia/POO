@@ -5,7 +5,7 @@ require_once("Challenger.php");
 
 class Fight
 {
-    public function figh
+    public function figh()
 }
 
 
