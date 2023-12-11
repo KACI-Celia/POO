@@ -2,10 +2,10 @@
 
 class Challenger
 {
-    private $_name;
-    private $_stamina;
-    private $_speed;
-    private $_strength;
+    public $_name;
+    public $_stamina;
+    public $_speed;
+    public $_strength;
 
     public function __construct($name, $stamina, $speed, $strength)
     {
@@ -31,7 +31,7 @@ class Challenger
     }
     public function setStamina($stamina)
     {
-        if(is_string($stamina))
+        if(is_int($stamina))
         {
             $this->_stamina = $stamina;
         }
@@ -42,7 +42,7 @@ class Challenger
     }
     public function setSpeed($speed)
     {
-        if(is_string($speed))
+        if(is_int($speed))
         {
             $this->_speed = $speed;
         }
@@ -53,17 +53,18 @@ class Challenger
     }
     public function setStrenghth($strength)
     {
-        if(is_string($strength))
+        if(is_int($strength))
         {
             $this->_strength = $strength;
         }
     }
 }
-$challenger = new Challenger("Challenger", "2100", "80", "1890");
-echo "Name :". $challenger->getName() ."\n";
+$challenger = new Challenger("Challenger", 21000, 80, 1890);
+
+/*echo "Name :". $challenger->getName() ."\n";
 echo "Stamina :". $challenger->getStamina() ."\n";
 echo "Speed :". $challenger->getSpeed() ."\n";
-echo "Strength :". $challenger->getStrength() ."\n";
+echo "Strength :". $challenger->getStrength() ."\n";*/
 
 
 

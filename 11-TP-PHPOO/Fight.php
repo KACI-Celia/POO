@@ -7,16 +7,31 @@ require_once("Challenger.php");
 class Fight
 {
     public function fighting($ippo, $challenger)
-    {
-        $round=10;
-        for($round=1; $round<=10; $round++){
+        {
+            $staminaIppo = $ippo->_stamina;
+        $staminaChallenger = $challenger->_stamina;// cette methode nous permet de recuperer la valeur de notre stamina actuelle de Ippo et celle du challengers(ce sont ces deux variables qui vont changer pendant le combat)
+        for($round=1; $round<=10; $round++){ //on peut mettre $round=1 ou =0 mais de preference=1
             echo "Round $round . \n";
+            if($ippo->_speed > $challenger->_speed)
+            {
+                $staminaChallenger = $staminaChallenger - $ippo->_strength;  // ici le Ippo frappe en premier, donc la force du challenger diminue
+                echo "Ippo frappe en premier" . $staminaChallenger . "\n";
+                if($staminaChallenger<=0)
+                {
+                    echo "Ippo a gagné \n";
+                }
+                else{
+                    $staminaIppo = $staminaIppo -$challenger->_strength;// 
+                    echo $staminaIppo ."\n";
+                }
+            }
         }
-        $staminaIppo = $ippo->stamina - $challenger->strength;
-        $staminaChallenger = $challenger->stamina - $ippo->strength;
+        
     }
 }
+$fight = new fight;
 
+$fight->fighting($ippo, $challenger);
 
 
 ?>
