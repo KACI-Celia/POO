@@ -16,14 +16,23 @@ class Fight
             {
                 $staminaChallenger = $staminaChallenger - $ippo->_strength;  // ici le Ippo frappe en premier, donc la force du challenger diminue
                 echo "Ippo frappe en premier" . $staminaChallenger . "\n";
-                if($staminaChallenger<=0)
+                if($staminaChallenger<=0) 
                 {
                     echo "Ippo a gagné \n";
                 }
                 else{
-                    $staminaIppo = $staminaIppo -$challenger->_strength;// 
-                    echo $staminaIppo ."\n";
+                    $staminaIppo = $staminaIppo -$challenger->_strength;//  // si le challenger n'est pas mort(stamina pas finie), le cambat continue
+                    echo "le combat continu . $staminaIppo .\n";
                 }
+            }
+            if($staminaChallenger ==0 || $staminaIppo ==0)
+            { 
+                echo "le combat est fini ! \n";
+            }
+            else
+            {
+                $strenght =_strength*2
+                echo "coup fatal  \n";
             }
         }
         
